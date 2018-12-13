@@ -6,4 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Sandip' });
 });
 
+router.get('/:id', function(req, res,next){
+  res.send(req.params.id);
+})
 module.exports = router;
